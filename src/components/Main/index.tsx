@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import * as S from './styles';
 import React from 'react';
 
