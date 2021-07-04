@@ -1,0 +1,16 @@
+import { render, screen } from '@testing-library/react';
+
+import {{pascalCase name}} from '.';
+
+describe('
+<{{pascalCase name}} /> ', () => {
+it('Shoud be able to render {{pascalCase name}} component', () => {
+const { container } = render(
+<{{pascalCase name}} />);
+
+expect(screen.getByRole('heading', { name: /{{pascalCase name}}/i })
+).toBeInTheDocument();
+
+expect(container.firstChild).toMatchSnapshot();
+});
+});
